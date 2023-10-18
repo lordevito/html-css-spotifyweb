@@ -15,3 +15,45 @@ RESET
 COMMON
 ***********
 */
+
+.bg-b{
+    background-color: black;
+}
+
+.bg-grey{
+    background-color: #a3a3a3;
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.photo-menu{
+    width: 100%;
+
+}
+
+.d-none{
+    display: none;
+}
+
+.c-white{
+    color: white;
+}
+
+.c-grey{
+    filter: grayscale(100%);
+}
+
+/*
+***********
+MAIN
+***********
+*/
+
+.nav{
+    padding: 10px;
+    height: 100%;
+    max-width: 50px;
+}
