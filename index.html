@@ -6,6 +6,10 @@
     <title>Spotify Web</title>
     <!--Collegamento Css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Collegamento Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans&display=swap" rel="stylesheet">
     <!--Collegamento Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Inserimento favicon-->
@@ -13,58 +17,76 @@
 </head>
 <body>
     <!--Inizio main-->
-    <main>
+    <main class="m-sides">
         <div class="nav bg-b">
-            <div class="photo-menu">
-                <img src="img/logo-small.svg" alt="Logo small Spotify">
-                <div class="d-none">
-                    <img src="img/logo.svg" class="photo-menu" alt="Logo Large">
-                </div>
+            <div class="spot-img">
+                <img src="img/logo-small.svg" alt="Logo small Spotify" id="logo-small">
+                <img src="img/logo.svg" class="photo-menu" alt="Logo Large" id="logo">
             </div>
-            <div class="photo-menu">
-                <img src="img/home.svg" class="c-grey" alt="Logo small Spotify">
-                <span class="d-none">Home</span>
-            </div>
-            <div class="photo-menu">
-                <img src="img/search.svg" class="c-grey" alt="Logo small Spotify">
-                <span class="d-none">Cerca</span>
-            </div>
-            <div class="photo-menu">
-                <img src="img/libreria.svg" class="c-grey" alt="Logo small Spotify">
-                <span class="d-none">La tua libreria</span>
-            </div>
-            <div class="d-none">
-                <h3 class="c-white">PLAYLIST</h3>
-                <div>
-                    <span>+</span>
-                    <span>Crea Playlist</span>
-                </div>
-                <ul>
+            <div class="photo-menu menu">
+                <ul class="main-menu">
                     <li>
-                        <span>Nome Playlist</span>
+                        <a href="#" class="c-grey"><img src="img/home.svg" class="f-grey spot-img"
+                                alt="Home"><span class="d-none">Home</span></a>
+
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
+                        <a href="#" class="d-none c-grey"><img src="img/search.svg" class="f-grey spot-img"
+                                alt="Search"><span class="d-none">Cerca</span></a>
                     </li>
                     <li>
-                        <span>Nome Playlist</span>
-                    </li>
-                    <li>
-                        <span>Nome Playlist</span>
-                    </li>
-                    <li>
-                        <span>Nome Playlist</span>
-                    </li>
-                    <li>
-                        <span>Nome Playlist</span>
-                    </li>
-                    <li>
-                        <span>Nome Playlist</span>
+                        <a href="#" class="d-none c-grey"><img src="img/libreria.svg" class="f-grey spot-img"
+                                alt="Libreria"><span class="d-none">La tua libreria</span></a>
                     </li>
                 </ul>
             </div>
+            <div class="photo-menu d-none2 playlist">
+                <div>
+                    <h3 class="d-none2 c-white">PLAYLIST</h3>
+                    <spand class="d-none">+</spand>
+                    <span class="d-none c-grey">Crea Playlist</span>
+                </div>
+                <div class="p-list">
+                    <ul>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                        <li>
+                            <span class="d-none c-grey">Nome Playlist</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="photo-menu marg-t">
+                <div class="rounded">
+                    <img src="img/download.svg" class="c-grey spot-img" alt="Profile">
+                    <span class="d-none c-grey">Installa app</span>
+                </div>
+                <hr class="d-none c-grey hr-p">
+                <div class="">
+                    <img src="img/profile.svg" class="prof spot-img" alt="Profile">
+                    <span class="d-none">John Doe</span>
+                </div>
+            </div>
         </div>
-        <div class="menu"></div>
+        <div class="music-list">
+
+        </div>
     </main>
     <!--Inizio footer-->
     <footer>

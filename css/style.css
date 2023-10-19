@@ -16,6 +16,11 @@ COMMON
 ***********
 */
 
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .bg-b{
     background-color: black;
 }
@@ -30,11 +35,24 @@ li{
 }
 
 .photo-menu{
-    width: 100%;
+    padding: 0 10px;
+    
+}
 
+.spot-img{
+    display: block;
+    width: 20px;
+}
+
+.nav-p{
+    padding: 10px;
 }
 
 .d-none{
+    display: none;
+}
+
+.d-none2{
     display: none;
 }
 
@@ -43,6 +61,10 @@ li{
 }
 
 .c-grey{
+    color: grey;
+}
+
+.f-grey{
     filter: grayscale(100%);
 }
 
@@ -52,8 +74,144 @@ MAIN
 ***********
 */
 
+.playlist{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.m-sides{
+    height: calc(100% - 90px);
+    display: flex;
+}
+
 .nav{
-    padding: 10px;
-    height: 100%;
-    max-width: 50px;
+    padding: 5px 0 10px 0;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.rounded{
+    display: flex;
+    margin-bottom: 10px;
+    padding-right: 2px;
+}
+
+.c-grey i{
+    margin: 5px 0px 0px 6px;
+}
+
+.marg-t{
+    margin-top: auto;
+}
+
+#logo{
+    display: none;
+}
+
+#logo-small{
+    height: 30px;
+    width:s 30px;
+}
+
+.music-list{
+    background-color: #141922;
+    flex-grow: 1;
+}
+
+.prof{
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.p-list{
+    overflow-y: auto;
+}
+
+.menu img{
+    width: 30px;
+}
+
+
+.main-menu li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.hr-p{
+    text-align: center;
+}
+
+
+/*
+***********
+FOOTER
+***********
+*/
+
+footer{
+    height: 90px;
+}
+
+
+/*
+***********
+RESPONSIVE
+***********
+*/
+
+/*small*/
+
+@media screen and (min-width: 576px){
+    .nav{
+        max-width: 230px;
+        padding: 10px 0 10px 0;
+    }
+
+    .d-none2{
+        display: block;
+    }
+
+    .d-none{
+        display: inline;
+    }
+
+    #logo {
+        width: 132px;
+        display: block;
+    }
+
+    #logo-small{
+        display: none;
+    }
+    
+    .playlist{
+        display: flex;
+    }
+
+    .marg-t{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+
+
+}
+
+@media screen and (min-width: 992px){
+
+
+}
+
+@media screen and (min-width: 1200px){
+
+
 }
