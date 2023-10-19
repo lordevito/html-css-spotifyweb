@@ -25,11 +25,6 @@ body{
     background-color: black;
 }
 
-.bg-grey{
-    background-color: #a3a3a3;
-    padding: 10px;
-}
-
 li{
     list-style-type: none;
 }
@@ -62,6 +57,10 @@ li{
 
 .c-grey{
     color: grey;
+}
+
+.f-c-grey{
+    color: #878787;
 }
 
 .f-grey{
@@ -146,6 +145,20 @@ MAIN
     text-align: center;
 }
 
+.bar-g{
+    background-color: #5a5a5a;
+    width: 80%;
+    height: 4px;
+    border-radius: 3px;
+    margin: 7px 7px;
+}
+
+.bar-w{
+    background-color: #c1c1c1;
+    width: 20%;
+    height: 4px;
+    border-radius: 3px;
+}
 
 /*
 ***********
@@ -153,10 +166,53 @@ FOOTER
 ***********
 */
 
+.f-bg-grey{
+    background-color: #282828;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
 footer{
     height: 90px;
 }
 
+.f-left img{
+    height: 30px;
+    width: 30px;
+    padding: 10px 7px 0 0;
+}
+
+.f-left{
+    display: flex;
+}
+
+.f-left-icon{
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+.f-left-icon i{
+    padding: 0 5px;
+}
+
+.f-center{
+    flex-grow: 1;
+}
+
+.s-flex{
+    display: flex;
+}
+
+.f-right i{
+    color: white;
+}
 
 /*
 ***********
@@ -198,11 +254,18 @@ RESPONSIVE
         flex-direction: column;
     }
 
+    .d-flex{
+        display: flex;
+    }
+
 
 }
 
 @media screen and (min-width: 768px){
 
+    .f-left-icon{
+        display: flex;
+    }
 
 }
 
