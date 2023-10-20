@@ -67,6 +67,20 @@ li{
     filter: grayscale(100%);
 }
 
+.t-trans{
+    text-transform: uppercase;
+}
+
+
+.same-size{
+    font-size: 13px;
+}
+
+.name-song{
+    width: 100%;
+}
+
+
 /*
 ***********
 MAIN
@@ -94,12 +108,25 @@ MAIN
 
 .rounded{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-right: 2px;
+}
+
+.pad-right{
     padding-right: 2px;
 }
 
 .c-grey i{
     margin: 5px 0px 0px 6px;
+}
+
+.m-top{
+    margin-top: 5px;
+
+}
+
+.marg-l{
+    margin-left: 5px;
 }
 
 .marg-t{
@@ -147,7 +174,7 @@ MAIN
 
 .bar-g{
     background-color: #5a5a5a;
-    width: 80%;
+    width: 60%;
     height: 4px;
     border-radius: 3px;
     margin: 7px 7px;
@@ -158,6 +185,16 @@ MAIN
     width: 20%;
     height: 4px;
     border-radius: 3px;
+}
+
+.m-top span{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
+.rounded .same-size{
+    padding-top: 2px;
 }
 
 /*
@@ -176,6 +213,7 @@ FOOTER
     right: 0;
     left: 0;
     z-index: 10;
+    width: 100%;
 }
 
 
@@ -191,6 +229,7 @@ footer{
 
 .f-left{
     display: flex;
+    width: 20%;
 }
 
 .f-left-icon{
@@ -203,15 +242,50 @@ footer{
 }
 
 .f-center{
-    flex-grow: 1;
+    width: 45%;
 }
 
 .s-flex{
     display: flex;
+    justify-content: space-between;
+}
+
+.s-flex i{
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.f-right{
+    width: 25%;
+    padding: 14px 0 0 0;
 }
 
 .f-right i{
     color: white;
+}
+
+.b-icon{
+    font-size: 20px;
+}
+
+.song-bar{
+    margin-top: 5px ;
+}
+
+.name-song h4{
+    font-size: 12px;
+}
+
+.name-song .d-flex div{
+    font-size: 10px;
+}
+
+.c-white .fonts-i i{
+    font-size: 30px;
+}
+
+.c-white i{
+    font-size: 20px
 }
 
 /*
@@ -239,6 +313,7 @@ RESPONSIVE
     #logo {
         width: 132px;
         display: block;
+        margin-bottom: 10px;
     }
 
     #logo-small{
