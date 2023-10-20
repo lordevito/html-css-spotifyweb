@@ -230,12 +230,39 @@ LISTA MUSICA
 .top-button button{
     font-size: 10px;
     font-weight: bold;
-    margin: 15px 15px 0 0;
+    margin: 15px 0 0 0;
     padding: 7px 25px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: #141922;
+    background-color: #141922   
 }
+
+.music-list .scelte{
+    margin-top: 90px;
+}
+
+.scelte .menu-scelte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.scelte .menu-scelte li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bar-y{
+    background-color: #adff2f;
+    height: 3px;
+    width: 40%;
+    margin-left: 25px;
+}
+
 
 /*
 ***********
