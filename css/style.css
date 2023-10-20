@@ -76,6 +76,10 @@ li{
     font-size: 13px;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .name-song{
     width: 100%;
 }
@@ -92,6 +96,31 @@ li{
     font-size: 20px;
 }
 
+.container section{
+    margin: 20px;
+}
+
+.info-song{
+    text-align: center;
+}
+
+.info-song .c-white{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-song span{
+    margin-top: 7px;
+}
+
+.songs{
+    margin-top: 10px;
+}
+
+.b-radius{
+    border-radius: 50%;
+}
 
 /*
 ***********
@@ -134,7 +163,10 @@ BARRA NAVIGAZIONE SINISTRA
 
 .m-top{
     margin-top: 5px;
+}
 
+.m-top2{
+    margin-top: 10px;
 }
 
 .marg-l{
@@ -263,6 +295,20 @@ LISTA MUSICA
     margin-left: 25px;
 }
 
+.list-songs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.list-songs .songs{
+    margin-right: 10px;
+    width: calc(100% / 2 - 10px);
+}
+
+.list-songs .songs .cover-song img{
+    width: 100%;
+}
 
 /*
 ***********
@@ -400,11 +446,20 @@ RESPONSIVE
         display: flex;
     }
 
+    .list-songs .songs{
+        margin-right: 10px;
+        width: calc(100% / 4 - 10px);
+    }
+
 }
 
 @media screen and (min-width: 992px){
-
-
+    
+    .list-songs .songs{
+        margin-right: 10px;
+        width: calc(100% / 6 - 10px);
+    }
+   
 }
 
 @media screen and (min-width: 1200px){
