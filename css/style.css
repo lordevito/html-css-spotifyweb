@@ -80,10 +80,22 @@ li{
     width: 100%;
 }
 
+.c-white .fonts-i i{
+    font-size: 30px;
+}
+
+.c-white i{
+    font-size: 20px
+}
+
+.b-icon{
+    font-size: 20px;
+}
+
 
 /*
 ***********
-MAIN
+BARRA NAVIGAZIONE SINISTRA
 ***********
 */
 
@@ -145,6 +157,7 @@ MAIN
 .music-list{
     background-color: #141922;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .prof{
@@ -195,6 +208,33 @@ MAIN
 
 .rounded .same-size{
     padding-top: 2px;
+}
+
+/*
+***********
+LISTA MUSICA
+***********
+*/
+
+.top-button{
+    height: 90px;
+    position: fixed;
+    left: 50px;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0 ,0 , 0.4);
+    text-align: right;
+    padding: 15px;
+}
+
+.top-button button{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 15px 15px 0 0;
+    padding: 7px 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #141922;
 }
 
 /*
@@ -264,10 +304,6 @@ footer{
     color: white;
 }
 
-.b-icon{
-    font-size: 20px;
-}
-
 .song-bar{
     margin-top: 5px ;
 }
@@ -280,14 +316,6 @@ footer{
     font-size: 10px;
 }
 
-.c-white .fonts-i i{
-    font-size: 30px;
-}
-
-.c-white i{
-    font-size: 20px
-}
-
 /*
 ***********
 RESPONSIVE
@@ -298,7 +326,7 @@ RESPONSIVE
 
 @media screen and (min-width: 576px){
     .nav{
-        max-width: 230px;
+        width: 200px;
         padding: 10px 0 10px 0;
     }
 
@@ -333,6 +361,9 @@ RESPONSIVE
         display: flex;
     }
 
+    .top-button{
+        left: 200px;
+    }
 
 }
 
